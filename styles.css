@@ -1,0 +1,40 @@
+body{
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: 2000px;
+    padding-top: 85px;
+}
+
+nav {
+    top: 0;
+    height: 70px;
+    width: 100vw;
+    background-color: blue;
+    position: fixed;
+    color: black;
+    padding: 10px 20px 0px 20px;
+}
+
+.nav_box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.nav_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav_item {
+    flex-grow: 1;
+    padding: 0 18px;
+}
+
+.logo {
+    flex-grow: 4;
+}
