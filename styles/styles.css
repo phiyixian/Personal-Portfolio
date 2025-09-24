@@ -1,10 +1,9 @@
-body{
+body {
     top: 0;
     left: 0;
     right: 0;
     margin: 0;
     height: 2000px;
-    padding-top: 85px;
 }
 
 nav {
@@ -12,13 +11,13 @@ nav {
     height: 70px;
     width: 100vw;
     /* Black with opacity 0.5 */
-    background-color: rgba(0, 45, 128, 0.5); 
+    /* background-color: rgba(0, 45, 128, 0.5); */
     position: fixed;
     padding-top: 10px;
     /* padding: 10px 20px 0px 20px; */
 }
 
-.nav_box{
+.nav_box {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,7 +30,7 @@ nav {
     justify-content: space-evenly;
 }
 
-.nav_items a{
+.nav_items a {
     all: unset;
     text-decoration: none;
     flex-grow: 1;
@@ -39,9 +38,11 @@ nav {
     font-family: "Jua", sans-serif;
     cursor: pointer;
     color: white;
+    z-index: 1;
 }
 
-a:hover, a:active{
+a:hover,
+a:active {
     color: aquamarine;
 }
 
@@ -50,19 +51,72 @@ a:hover, a:active{
 }
 
 .header {
+    padding-top: 100px;
     width: 100vw;
-    height: 300px;
+    height: 80vh;
     display: flex;
+    flex-direction: column;
     justify-items: center;
+    background-image: url("../sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-h1 {
-    font-family: "Barriecito", system-ui;
-    font-size: 70px;
-    width: 80%;
-    display: flex;
+.headshot {
+    width: 400px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     justify-content: center;
+}
+
+/* .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} */
+
+.title {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: -70px;
+}
+
+.name {
+    margin: 0;
+    text-shadow: 8px 5px 10px rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    font-family: "Barriecito", system-ui;
+    /* font-size:clamp(28px,6vw,64px); */
+    font-size: 90px;
+}
+
+/* Word wrapper, word sit next to each other with gap */
+.word {
+    display: inline-block;
+    margin: 0 10px;
+    overflow: visible;
+}
+
+/* Each character */
+.char {
+    z-index: 1;
+    display: inline-block;
+    /* transition final state */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    will-change: transform;
+}
+
+/* Initial state */
+.char.init {
+    transform: translateX(var(--start-x, 0)) translateY(var(--start-y, 0)) rotate(var(--start-rot, 0deg));
+}
+
+/* when .in class added, transform is ran */
+.name.in .char {
+    transform: translateX(0) translateY(0) rotate(0deg);
 }
