@@ -57,7 +57,7 @@ a:active {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    background-image: url("../sky.jpg");
+    background-image: url("../images/sky.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -119,4 +119,21 @@ a:active {
 /* when .in class added, transform is ran */
 .name.in .char {
     transform: translateX(0) translateY(0) rotate(0deg);
+}
+
+
+.footer {
+    bottom: 0;
+}
+
+.lava img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+}
+
+.castle img{
+    width: 100vw;
+    height: auto;
+    object-fit: fill;
 }
