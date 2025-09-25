@@ -3,7 +3,6 @@ body{
     left: 0;
     right: 0;
     margin: 0;
-    height: 2000px;
     padding-top: 85px;
 }
 
@@ -12,7 +11,7 @@ nav {
     height: 70px;
     width: 100vw;
     /* Black with opacity 0.5 */
-    background-color: rgba(0, 45, 128, 0.5); 
+    /* background-color: rgba(0, 45, 128, 0.5);  */
     position: fixed;
     padding-top: 10px;
     /* padding: 10px 20px 0px 20px; */
@@ -58,11 +57,27 @@ a:hover, a:active{
 
 h1 {
     font-family: "Barriecito", system-ui;
-    font-size: 70px;
+    font-size: 85px;
     width: 80%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     justify-content: center;
+}
+
+.footer {
+    bottom: 0;
+}
+
+.lava img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+}
+
+.castle img{
+    width: 100vw;
+    height: auto;
+    object-fit: fill;
 }
