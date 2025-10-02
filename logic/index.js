@@ -1,3 +1,20 @@
+const bird = document.querySelector('.bird');
+
+// function to randomize Y position
+function randomizeBirdY() {
+  // between 10vh and 50vh (so not too high/low)
+  const randomOffset = Math.floor(Math.random() * 40 + 10) + 'vh';
+  bird.style.setProperty("--bird", randomOffset);
+}
+
+// set initial random position
+randomizeBirdY();
+
+// change position every time animation loops
+bird.addEventListener("animationiteration", () => {
+  randomizeBirdY();
+});
+
 const canvas = document.getElementById("canvas");
 const maxWidth = window.innerWidth;
 

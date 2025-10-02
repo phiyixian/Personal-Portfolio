@@ -4,6 +4,7 @@ body {
   right: 0;
   margin: 0;
   height: 2000px;
+  overflow-x: hidden;
 }
 
 nav {
@@ -56,8 +57,8 @@ a:active {
   padding-top: 70px;
   width: 100vw;
   max-width: 100vw;
-  height: 120vw;
-  max-height: 160vh;
+  height: 250vw;
+  max-height: 270vh;
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -193,6 +194,7 @@ a:active {
   height: 100px;
   perspective: 1000px;
   perspective-origin: 50% 50%;
+  z-index: 5;
   /* background-color: aqua; */
 }
 
@@ -255,11 +257,16 @@ a:active {
 }
 
 #bubble1 {
-  width: 25vw;
-  height: 25vw;
-  max-width: 200%;
-  max-height: 200%;
+  width: 35vw;
+  height: 35vw;
+  max-width: 220%;
+  max-height: 220%;
   margin: 6vw 20vw;
+  z-index: 7;
+  background-image: url("../images/skills.png");
+  background-size: cover;
+  background-blend-mode: lighten;
+  box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.7); /* Example inset shadow */
 }
 
 #bubble2 {
@@ -269,22 +276,47 @@ a:active {
   max-height: 170%;
   left: 70vw;
   margin-top: -10vw;
+  z-index: 7;
+  background-image: url("../images/experience.png");
+  background-size: cover;
+  background-blend-mode: lighten;
+  box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.7); /* Example inset shadow */
 }
 
 #bubble3 {
   width: 25vw;
   height: 15vw;
-  max-width: 120%;
-  max-height: 120%;
+  max-width: 150%;
+  max-height: 150%;
   margin-left: 13vw;
   margin-top: -5vw;
+  z-index: 7;
+  background-image: url("../images/project.png");
+  background-size: cover;
+  background-blend-mode: lighten;
+  box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.7); /* Example inset shadow */
 }
 
 .canvas {
   width: 100vw;
 }
 
+.bird {
+  position: absolute;
+  top: var(--bird);
+  right: -150px;
+  animation: fly 20s linear infinite;
+  z-index: 10;
+}
+
+.bird img{
+  width: 15vw;
+  height: auto;
+}
+
+
 .bubble {
+  z-index: 1;
   border-radius: 50%;
   opacity: 0.6;
   position: absolute;
@@ -299,6 +331,48 @@ a:active {
   animation: floatUp linear infinite;
   animation-duration: var(--duration);
   transform: translateX(0);
+}
+
+.bubbles a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+} 
+
+.experience {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: lightgrey; */
+  z-index: 11;
+  margin-top: 15vw;
+  position: relative;
+}
+
+.clouds {
+  position: absolute;
+  width: 80vw;
+  height: auto;
+  object-fit: cover;
+  left: 15vw;
+}
+
+.cloud1 {
+  position: absolute;
+  top: -15vh;
+  left: -2vw;
+  width: 50vw;
+  height: auto;
+  z-index: 11;
+}
+
+.cloud2 {
+  position: absolute;
+  top: -15vh;
+  left: 60vw;
+  width: 50vw;
+  height: auto;
+  z-index: 11;
 }
 
 
@@ -342,6 +416,17 @@ a:active {
   }
 }
 
+@keyframes fly {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-120vw);
+  }
+}
+
+/******************************************************************************/
+
 /* TABLET VIEW */
 @media (max-width: 900px) {
   .left_bush {
@@ -375,8 +460,8 @@ a:active {
   #bubble1 {
     min-width: 80px;
     min-height: 80px;
-    width: 17vw;
-    height: 17vw;
+    width: 20vw;
+    height: 20vw;
     max-width: 170%;
     max-height: 170%;
     margin: 10vw 18vw;
@@ -394,8 +479,8 @@ a:active {
   #bubble3 {
     width: 15vw;
     height: 15vw;
-    max-width: 85%;
-    max-height: 85%;
+    max-width: 100%;
+    max-height: 100%;
     margin-left: 10vw;
     margin-top: -20vw;
   }
