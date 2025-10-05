@@ -55,7 +55,7 @@ a:hover, a:active{
     justify-items: center;
 }
 
-h1 {
+header h1 {
     font-family: "Barriecito", system-ui;
     font-size: 85px;
     width: 80%;
