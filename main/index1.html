@@ -18,22 +18,54 @@
                 <a href="#">Home</a>
                 <a href="#">Experience</a>
                 <a href="#">Projects</a>
-                <a href="#">Skills</a>
+                <a href="#skills">Skills</a>
                 <a href="#">Contact Me</a>
             </div>
         </div>
     </nav>
-    <div class="header">
-        <h1>Phi Yi Xian</h1>
+    <div class="header canvas" id="canvas">
+        <div class="container">
+            <div class="bubbles" id="bubble1"><a href="#skills"></a></div>
+            <div class="bubbles" id="bubble2"><a href="#projects"></a></div>
+            <div class="bubbles" id="bubble3"><a href="#experience"></a></div>
+        </div>
+        <img src="../images/headshot.png" alt="Phi's Headshot" class="headshot">
+        <div class="title">
+            <h1 id="name" class="name">Phi Yi Xian</h1>
+        </div>
+        <div class="canvas" id="canvas"></div>
+
+        <div class="experience" id="experience">
+            <div class="bird" id="bird">
+                <img src="../images/bird.png" alt="This is a flying bird.">
+            </div>
+        <div class="cloud1">
+            <img class="clouds" src="../images/clouds.png" alt="These are clouds.">
+            <img class="cloud1" src="../images/cloud1.png" alt="This is a cloud">
+            <img class="cloud2" src="../images/cloud1.png" alt="This is a cloud">
+        </div>
+    </div>
     </div>
 
-    <div class="skills">
+    
+
+    <div class="skills" id="skills">
+        <div class="left_bush">
+            <img src="../images/left_bush.png" alt="Bush on the left." >
+        </div>
         <div class="castle">
             <img src="../images/castle.png" alt="Castle by the hill." >
         </div>
+
+        <div class="land">
+            <img src="../images/land.png" alt="Ground leading to castle." >
+        </div>
+        <div class="right_bush">
+            <img src="../images/right_bush.png" alt="Bush on the right." >
+        </div>
     </div>
 
-    <div class="carousel">
+<div class="carousel">
     <div class="slider">
         <a href="#project-1">1</a>
         <a href="#project-2">2</a>
@@ -165,5 +197,8 @@
             <img src="../images/lava.png" alt="Flowing lava." >
         </div>
     </div>
+
+
+    <script src="../logic/index.js"></script>
 </body>
 </html>
