@@ -141,7 +141,7 @@ a:active {
 
 .sks {
   font-family: "Jua", sans-serif;
-  font-size: 24px;
+  font-size: 2rem;
   color: rgb(250, 255, 177);
   text-shadow: 4px 3px 6px rgba(0, 0, 0, 0.7);
   margin-top: -10px;
@@ -153,23 +153,23 @@ a:active {
 }
 
 .skill1 {
-  top: 8vw;
-  left: 14vw;
+  top: 3vw;
+  left: 10vw;
 }
 
 .skill2 {
-  top: 12vw;
-  left: 50vw;
+  top: 3vw;
+  left: 52vw;
 }
 
 .skill3 {
-  top: 20vw;
-  left: 30vw;
+  top: 14vw;
+  left: 32vw;
 }
 
 .skill4 {
-  top: 18vw;
-  left: 70vw;
+  top: 14vw;
+  left: 72vw;
 }
 
 .footer {
