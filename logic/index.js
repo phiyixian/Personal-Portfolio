@@ -1,3 +1,12 @@
+const overlay = document.querySelector('.shade');
+
+    document.addEventListener('mousemove', e => {
+      overlay.style.setProperty('--x', `${e.clientX}px`);
+      overlay.style.setProperty('--y', `${e.clientY}px`);
+    });
+
+
+
 function togglePopup(id) {
   // Get all popups
   const popups = document.querySelectorAll('.popuptext');

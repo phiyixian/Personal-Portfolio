@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
@@ -16,18 +17,18 @@
             <div class="logo"></div>
             <div class="nav_items">
                 <a href="#">Home</a>
-                <a href="#">Experience</a>
-                <a href="#">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#">Contact Me</a>
+                <a href="#skills">Experience</a>
+                <a href="#carousel">Projects</a>
+                <a href="#shade">Skills</a>
+                <a href="#socials">Contact Me</a>
             </div>
         </div>
     </nav>
     <div class="header canvas" id="canvas">
         <div class="container">
-            <div class="bubbles" id="bubble1"><a href="#skills"></a></div>
-            <div class="bubbles" id="bubble2"><a href="#projects"></a></div>
-            <div class="bubbles" id="bubble3"><a href="#experience"></a></div>
+            <div class="bubbles" id="bubble1"><a href="#shade"></a></div>
+            <div class="bubbles" id="bubble2"><a href="#skills"></a></div>
+            <div class="bubbles" id="bubble3"><a href="#carousel"></a></div>
         </div>
         <img src="../images/headshot.png" alt="Phi's Headshot" class="headshot">
         <div class="title">
@@ -120,7 +121,7 @@
         </div> -->
     </div>
             <img class="land-img" src="../images/land.png" alt="Ground leading to castle." >
-            <div class="carousel">
+            <div class="carousel" id="carousel">
     <div class="slider">
         
 
@@ -129,7 +130,7 @@
         <div class="project" id="project-1">
             <div class="project-intro">
                 <div class="project-title">
-                    <img width='55px' height="55px" src="../images/kdeb.png" alt="KDEB Logo">
+                    <img src="../images/kdeb.png" alt="KDEB Logo">
                     <h1>iClean Selangor Mobile Application Introduction</h1>
                 </div>
                 <h3>Together with KDEB Waste Management</h3>
@@ -148,7 +149,7 @@
         <div class="project" id="project-2">
             <div class="project-intro">
                 <div class="project-title">
-                    <img width='55px' height="55px" src="../images/cm.jpg" alt="Charisma Movement Logo">
+                    <img src="../images/cm.jpg" alt="Charisma Movement Logo">
                     <h1>Volunteering with KKB Series (4 Episodes)</h1>
                 </div>
                 <h3>Together with Kebun-Kebun Bangsar</h3>
@@ -233,6 +234,7 @@
         
         
         <div class="footer">
+        <div class="shade" id="shade"></div>
         <div class="sks">
             <div class="sk skill1">
                 <h3>Video Editing</h3>
@@ -247,9 +249,41 @@
                 <h3>Graphic Design</h3>
             </div>
         </div>
-        <div class="lava">
-            <img src="../images/lava.png" alt="Flowing lava." >
-        </div>
+        <div class="form">
+            <h2>Say Hi!</h2>
+  <form action="https://formspree.io/f/xjkaapvl" method="POST">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+
+    <label for="subject">Your Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+        
+<div class="socials" id="socials">
+<a href="https://www.linkedin.com/in/phi-yi-xian-0160781b9/" class="fa fa-linkedin" target="_blank"></a>
+<a href="https://www.youtube.com/@leia_arts" class="fa fa-youtube" target="_blank"></a>
+<a href="https://www.instagram.com/phi_artsss/" class="fa fa-instagram" target="_blank"></a>
+<a href="https://github.com/phiyixian" class="fa fa-github" target="_blank"></a>
+</div>
+
+<div class="lava">
+    <img src="../images/lava.png" alt="Flowing lava." >
+</div>
+
+<div class="footer-text">
+    <p>Made with ❤️ by PHI | <a href="#top">Back to top</a></p>
+</div>
     </div>
 
 
