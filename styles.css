@@ -75,7 +75,7 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  background-image: url("../images/sky.jpg");
+  background-image: url("images/sky.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -163,7 +163,7 @@ a:active {
   height: 100vh;
 
   position: absolute;
-  background-image: url("../images/skills-bg.png");
+  background-image: url("images/skills-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -721,7 +721,7 @@ input[type=submit]:hover {
   max-height: 220%;
   margin: 6vw 20vw;
   z-index: 7;
-  background-image: url("../images/skills.png");
+  background-image: url("images/skills.png");
   background-size: cover;
   background-blend-mode: lighten;
   box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.7); /* Example inset shadow */
@@ -735,7 +735,7 @@ input[type=submit]:hover {
   left: 70vw;
   margin-top: -10vw;
   z-index: 7;
-  background-image: url("../images/experience.png");
+  background-image: url("images/experience.png");
   background-size: cover;
   background-blend-mode: lighten;
   box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.7); /* Example inset shadow */
@@ -749,7 +749,7 @@ input[type=submit]:hover {
   margin-left: 13vw;
   margin-top: -5vw;
   z-index: 7;
-  background-image: url("../images/project.png");
+  background-image: url("images/project.png");
   background-size: cover;
   background-blend-mode: lighten;
   box-shadow: inset 0 0 20px 5px rgba(0, 0, 0, 0.7); /* Example inset shadow */
