@@ -1,3 +1,14 @@
+html, body {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 body {
   top: 0;
   left: 0;
@@ -512,7 +523,6 @@ input[type=submit]:hover {
   max-width: 100px;   /* limits size on tablets */
   height: auto;
   cursor: pointer;
-  overflow: hidden;
 }
 
 .stones img {
@@ -520,6 +530,7 @@ input[type=submit]:hover {
   height: auto;
   display: block;
 }
+
 .popuptext {
   visibility: hidden;
   width: 70vw;
@@ -574,6 +585,14 @@ input[type=submit]:hover {
   padding: 40px;
   display: flex;
   flex-direction: column;
+}
+
+.stone1-txt h1 {
+  font-size: 1.2rem;
+}
+
+.stone1-txt p {
+  font-size: 1.2vw;
 }
 
 .stone2 {
@@ -636,6 +655,8 @@ input[type=submit]:hover {
 }
 
 .bubbles {
+  box-sizing: content-box;
+  display: block;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -786,19 +807,27 @@ input[type=submit]:hover {
   position: relative;
 }
 
+.cloud {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
 .clouds {
   position: absolute;
   width: 80vw;
   height: auto;
   object-fit: cover;
-  left: 15vw;
 }
 
 .cloud1 {
   position: absolute;
   top: -15vh;
   left: -2vw;
-  width: 50vw;
+  width: 45vw;
   height: auto;
   z-index: 11;
 }
@@ -807,7 +836,7 @@ input[type=submit]:hover {
   position: absolute;
   top: -15vh;
   left: 60vw;
-  width: 50vw;
+  width: 45vw;
   height: auto;
   z-index: 11;
 }
@@ -919,6 +948,97 @@ input[type=submit]:hover {
 
 /* TABLET VIEW */
 @media (max-width: 900px) {
+  .carousel {
+  margin-top: 45vw;
+}
+  .popuptext {
+  width: 70vw;
+  height: 50vw;
+  padding: 8px 0;
+  top: -60vw;
+  left: 15vw;
+  overflow: hidden;
+}
+
+.popuptext img{
+  width: 20vw;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  top: 10vw;
+}
+
+  .stone1-exp {
+    flex-direction: column;
+  width: 70vw;
+  padding: 10px;
+  z-index: 30;
+  height: 40vw;
+  margin-top: 2vw;
+  vertical-align: center;
+}
+
+
+.stone1-txt {
+  position: absolute;
+  width: 70vw;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.stone1-txt h1 {
+  font-size: 1rem;
+  padding-top: 30vw;
+}
+
+.stone1-txt p {
+  font-size: 1.5vw;
+  padding: 10px;
+  margin: 0;
+}
+.stone1-exp img {
+  overflow: hidden;
+  width: 15vw;
+  max-width: 250px;
+  border-radius: 10%;
+  height: auto;
+  object-fit: cover;
+}
+  
+
+.stone1 {
+  width: 120px;
+  top: 17vw;
+  left: 19vw;
+  z-index: 2;
+}
+
+.header {
+  max-height: 200vw;
+}
+.stone2 {
+  width: 80px;
+  top: 17vw;
+  left: 40vw;
+  z-index: 2;
+}
+
+.stone3 {
+  width: 70px;
+  top: 15vw;
+  left: 70vw;
+}
+
+  .slides > div {
+  margin-right: 20px;
+}
+
+  .phone-frame {
+    width: 45vw;
+    left: auto;
+    max-width: 350px;
+    aspect-ratio: 9 / 12;
+}
 
   .skill1 {
   top: -2vw;
@@ -954,7 +1074,7 @@ input[type=submit]:hover {
 }
 
 .socials {
-  margin-top: 300vw;
+  margin-top: 280vw;
 }
 
 .form {
@@ -968,6 +1088,10 @@ input[type=submit]:hover {
   padding: 10px;
 }
 
+.footer {
+  margin-top: 90vw;
+}
+
 .sks {
   top: 50vw;
   height: 100vh;
@@ -979,8 +1103,8 @@ input[type=submit]:hover {
   }
 
   .project {
-    margin-right: 0;
-    width: 70vw;
+    margin-right: 0px;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     height: 100vw;
@@ -996,11 +1120,11 @@ input[type=submit]:hover {
   }
 
   .project-title {
-    font-size: 0.8rem;
-    padding-top: 50px;
-    margin: 5px;
+    font-size: 0.7rem;
+    padding-top: 15vw;
+    margin: 2px;
     width: 70vw;
-    height: 20vw;
+    height: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1008,7 +1132,7 @@ input[type=submit]:hover {
   }
 
   .project-title h1{
-    height: 5vw;
+    height: 2vw;
 }
 
   .project-title img {
@@ -1018,7 +1142,7 @@ input[type=submit]:hover {
     max-height: 70px;
     height: 7vw;
     border-radius: 50%;
-    overflow: scroll;
+    overflow: hidden;
     object-fit: cover;
 
   }
@@ -1032,23 +1156,19 @@ input[type=submit]:hover {
   }
 
   .castle img {
-    width: 100vw;
-    height: auto;
-    object-fit: fill;
-    filter: drop-shadow(5px -10px 25px rgba(0, 0, 0, 0.5));
+    margin-top: -10vw;
+    right: 100px;
+    width: 130vw;
+    padding-left: -20px;
   }
 
   .land img {
-    margin-top: -22vw;
-    width: 100vw;
+    margin-top: -25vw;
+    width: 120vw;
     height: auto;
     object-fit: fill;
     filter: drop-shadow(5px -20px 20px rgba(0, 0, 0, 0.5));
   }
-
-  .project {
-    flex-direction: column;
-}
 
   .headshot {
     width: 100vw;
@@ -1096,13 +1216,59 @@ input[type=submit]:hover {
   }
 
   .title {
-    margin-top: -300px;
+    margin-top: -250px;
     padding-right: 2vw;
   }
 
   .name {
-    font-size: 15vw;
+    font-size: 12vw;
   }
+
+  .cloud {
+    width: 100vw;
+    top: -20vw;
+    height: 70vw;
+  }
+
+  .clouds {
+    top: -15vw;
+  }
+
+  .header {
+    height: 170vw;
+  }
+
+  .stone1-exp img {
+  max-width: 250px;
+  max-height: 100px;
+  overflow: hidden;
+  border-radius: 20%;
+  position: absolute;
+  top: -150px;
+}
+
+.stone1-txt p {
+  padding: 0;
+  margin: 0;
+  font-size: 2vw; 
+}
+
+.skills {
+  margin-top: -60vw;
+  left: -2vw;
+}
+
+.land {
+  margin-top: -22vw;
+}
+
+.land img {
+  margin-top: -2vw;
+}
+
+.castle img {
+  margin-top: 20vw;
+}
 
   #bubble1 {
     width: 25vw;
@@ -1123,4 +1289,82 @@ input[type=submit]:hover {
     margin-left: 5vw;
     margin-top: -25vw;
   }
+
+  .socials {
+  top: -10vw;
+}
+
+.phone-frame {
+    margin: 0px;
+}
+
+.stones {
+  position: absolute;
+  height: 20vw;
+  width: 100vw;
+  z-index: 100;
+}
+.stone1 {
+  width: 70px;
+  top: 17vw;
+  left: 19vw;
+  z-index: 10;
+}
+
+.stone2 {
+  width: 50px;
+  top: 17vw;
+  left: 40vw;
+  z-index: 10;
+}
+
+.stone3 {
+  width: 50px;
+  top: 14vw;
+  left: 70vw;
+  z-index: 10;
+}
+
+.carousel {
+  margin-top: 0;
+  top: 50vw;
+}
+
+.project-intro {
+    font-size: 3.5vw;
+}
+
+.project-title h1{
+    font-size: 5vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.project-title img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .form {
+  left: auto;
+  top: 170vw;
+}
+
+.socials {
+  margin-top: 400vw;
+}
+
+.fa {
+  padding: 10px;
+  width: 30px;
+  margin: 0 15px;
+}
+
+.popuptext {
+  height: 60vw;
+  padding-top: 20px;
+}
+
 }
