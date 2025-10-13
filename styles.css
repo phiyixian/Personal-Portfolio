@@ -1104,12 +1104,12 @@ input[type=submit]:hover {
 
   .project {
     margin-right: 0px;
-    width: 80vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     height: 100vw;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 0px;
     justify-content: center;
   }
 
@@ -1121,7 +1121,7 @@ input[type=submit]:hover {
 
   .project-title {
     font-size: 0.7rem;
-    padding-top: 15vw;
+    padding-top: 25vw;
     margin: 2px;
     width: 70vw;
     height: 3vw;
@@ -1240,17 +1240,27 @@ input[type=submit]:hover {
 
   .stone1-exp img {
   max-width: 250px;
-  max-height: 100px;
-  overflow: hidden;
-  border-radius: 20%;
+  max-height: 90px;
+  object-fit: cover;
+  border-radius: 20px;
   position: absolute;
-  top: -150px;
+  top: 5vw;
+  margin: 25px;
+}
+
+.stone1-txt{
+  width: 60vw;
+  margin: auto;
 }
 
 .stone1-txt p {
   padding: 0;
   margin: 0;
-  font-size: 2vw; 
+  font-size: 2.7vw; 
+}
+
+.stone1-txt h4 {
+  font-size: 2.8vw; 
 }
 
 .skills {
@@ -1264,6 +1274,13 @@ input[type=submit]:hover {
 
 .land img {
   margin-top: -2vw;
+}
+
+.lava {
+    margin-top: 70vw;
+  }
+  .lava img {
+  margin-top: 150vw;
 }
 
 .castle img {
@@ -1331,17 +1348,26 @@ input[type=submit]:hover {
 }
 
 .project-intro {
-    font-size: 3.5vw;
+  padding: 0px;
+    font-size: 3vw;
 }
 
+.project-title {
+    padding-top: 5px;
+    margin: 0px;
+    width: 70vw;
+    height: 20vw;
+  }
+
 .project-title h1{
+    height: 10vw;
     font-size: 5vw;
-    height: auto;
     padding: 0;
     margin: 0;
 }
 
 .project-title img {
+  top: 0;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -1349,7 +1375,7 @@ input[type=submit]:hover {
 
   .form {
   left: auto;
-  top: 170vw;
+  top: 200vw;
 }
 
 .socials {
@@ -1364,7 +1390,9 @@ input[type=submit]:hover {
 
 .popuptext {
   height: 60vw;
-  padding-top: 20px;
+  padding: 10px 0;
+  left: 15vw;
 }
+
 
 }
